@@ -28,6 +28,7 @@ public class PostControllerTest extends MyWithRestDoc {
                         .post("/posts")
                         .content(content)
                         .contentType(MediaType.APPLICATION_JSON));
+                                
         // then
         resultActions
                 .andExpect(MockMvcResultMatchers.status().isCreated())
