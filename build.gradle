@@ -54,3 +54,12 @@ bootJar {
         into 'src/main/resources/static/docs'    // /static/docs로 복사!
     }
 }
+
+build{
+	compileJava.options.encoding = 'UTF-8'
+	compileTestJava.options.encoding = 'UTF-8'
+}
+
+jar {
+	enabled = false
+}
